@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="main">
+        <nav>
+            <a href="#" class="logo">Luis David</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li class="active"><a href="#main">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact-form">Contactame</a></li>
+            </ul>
+            <a href="#" class="lang">Es</a>
+        </nav>
+
+        <div class="name">
+            <p>Hola</p>
+            <h1>Soy <em>Luis</em> David</h1>
+            <p class="details">Soy estudiante de la carrera
+                Tecnologías de la Información en la Universidad Laica Eloy Alfaro De Manabí.
+                Me considero un aficionado en el desarrollo web pero me gusta y me emociona aprender cosas
+                nuevas cada día.
+            </p>
+        </div>
+
+        <div class="black-line"></div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/luisdavid.castilloalonso" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/307Luis2" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/luis2_307/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </section>
+
+    <section id="about" class="hoja">
+        <div class="encabezado">
+            <div class="datos-personales">
+                <br>
+                <br>
+                <p>Nombre: Luis David Castillo Alonso</p>
+                <p>Fecha de Nacimiento: 23/07/2003</p>
+                <p>Dirección: Tierra Santa, calle los jardines</p>
+                <p>Teléfono: 0963714754</p>
+                <p>Email: luis23david@hotmail.com</p>
+            </div>
+            <img src="images/perfil.jpg" alt="Tu Foto" class="foto">
+        </div>
+
+        <div class="seccion">
+            <h2>Estudios Realizados</h2>
+            <p class="texto">Bachillerato General Unificado en la Unidad Educativa Fiscal Tarqui</p>
+        </div>
+
+        <div class="seccion">
+            <h2>Experiencia Laboral</h2>
+            <p class="texto">Aficionado en desarrollo web</p>
+            <p class="texto">Aficionado en gestores de base de datos</p>
+            <p class="texto">Aficionado en sistemas operativos</p>
+        </div>
+
+        <div class="seccion">
+            <h2>Referencias Personales</h2>
+            <table class="tabla-referencias">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cargo/Profesión</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>Maria López</td>
+                    <td>Gerente de Proyectos</td>
+                    <td>0974062443</td>
+                    <td>maria.lopez@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>Pablo Rodríguez</td>
+                    <td>Diseñador UI/UX</td>
+                    <td>09559642656</td>
+                    <td>pablo.rodriguez@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>Luisa Martínez</td>
+                    <td>Desarrolladora Backend</td>
+                    <td>0926693183</td>
+                    <td>luisa.martinez@hotmail.com</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h1 class="p-headind">Portafolio</h1>
+        <div class="p-container">
+            <div class="p-box">
+                <div class="overlay-text">
+                    <h1>Django</h1>
+                    <p>Blog y Portafolio</p>
+                </div>
+                <img src="images/project2.png">
+            </div>
+            <div class="p-box">
+                <div class="overlay-text">
+                    <h1>Django</h1>
+                    <p>Gestor de tareas</p>
+                </div>
+                <img src="images/project1.png">
+            </div>
+
+        </div>
+    </section>
+
+    </section>
+
+    <section id="contact-form">
+        <div class="container-form">
+            <div class="info-form">
+                <h2>¿Deseas contactarme?</h2>
+                <p>Con gusto me pondré en contacto contigo, solo llena el siguiente formulario.</p>
+            </div>
+            <form action="#" autocomplete="off">
+                <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
+                <input type="emal" name="email" placeholder="Tu Email" class="campo">
+                <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

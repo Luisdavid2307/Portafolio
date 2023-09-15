@@ -1,0 +1,361 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #161616;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    padding: 30px 50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-image: url("images/fondo.jpg");
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: calibri;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 15px;
+}
+
+.lang {
+    color: #292929;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    font-family: Poppins;
+}
+
+
+.active a,
+.menu li a:hover {
+    background-color: #292929;
+    color: #FFF !important;
+    font-weight: bold;
+    transition: all ease 0.4s;
+}
+
+.name {
+    font-family: calibri;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+
+.name p:nth-child(1),
+.name .details {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.name h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.black-line {
+    align-self: end;
+    width: 50%;
+    height: 15%;
+    margin-bottom: 4em;
+    position: absolute;
+    bottom: 0px;
+    left: -3%;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.black-line::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0 11px;
+    border-color: #ffffff transparent transparent transparent;
+    right: -.7em;
+    bottom: -2px;
+}
+
+.social {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+}
+
+.social a {
+    margin: 6px 12px;
+
+}
+
+.social i {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.social a:hover i {
+    color: #63D9FF;
+    transition: all ease 0.5s;
+}
+
+/* Estilos para el cuerpo de la página */
+.hoja {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.datos-personales {
+    text-align: left;
+    max-width: 300px;
+    /* Ajusta el ancho según tus preferencias */
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.foto {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-left: 250px;
+}
+
+.texto{
+    color: #000000;
+}
+
+/* Estilos para las secciones (Estudios, Experiencia, etc.) */
+.seccion {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.seccion h2 {
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la tabla de referencias */
+.tabla-referencias {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-referencias th,
+.tabla-referencias td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#portfolio {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 2% 20px 2%;
+}
+
+.p-headind {
+    font-family: calibri;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.p-box {
+    background-color: #1F1F1F;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.p-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-container {
+    width: 90%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+
+.overlay-text {
+    font-family: calibri;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(97, 208, 251, 0.8);
+    display: none;
+}
+
+.overlay-text h1,
+p {
+    color: #FFFFFF;
+}
+
+.overlay-text h1 {
+    font-size: 2.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+}
+
+.overlay-text p {
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.p-box:hover .overlay-text {
+    display: flex;
+}
+
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    height: 60vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.container-form h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 35px
+}
+
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+
+.container-form form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+    background: #000000;
+    color: white;
+}
